@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Online Shop</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,9 +15,48 @@
 <header>
   <nav id="top">
      <ul class="left">
-       <li><a href="#">Ваш город</a></li>
-       <li class="bold"><a href="#">Казань<img src="images\icon-arrow-down.png" alt="#"></a></li>
-       <li id="shops"><a href="#">Магазины в городе<img src="images\icon-arrow-down.png" alt="#"></a></li>
+       <li><a href="#">Ваш город </a></li>
+       <li class="bold" data-toggle="modal" data-target="#exampleModal">
+              <a href="#">Казань<img src="images\icon-arrow-down.png" alt="#">
+         <!-- Modal -->
+              <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+              <div class="modal-content">
+               <div class="modal-header">
+                 <h5 class="modal-title" id="exampleModalLabel">Укажите свой город</h5>
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true">&times;</span>
+               </div>
+               <div class="modal-body">
+                 От этого зависит стоимость доставки и варианты оплаты в ваш регион
+               </div>
+               <div class="modal-footer">
+                   <ul>
+                     <li><a href="#"><span>К</span><span id="Kazan">Казань</span></a></li>
+                     <li><a href="#"><span>Н</span>Нижний-Новгород</a></li>
+                     <li><a href="#"><span>У</span>Уфа</a></li>
+                    </ul>
+                     <ul>
+                     <li><a href="#"><span>М</span>Москва</a></li>
+                     <li><a href="#"><span>С</span>Самара</a></li>
+                   </ul>
+               </div>
+              </div>
+              </div>
+              </div>
+         <!-- Modal -->
+          </a>
+     </li>
+       <li id="shops">
+           <div class="dropdown">
+          <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Магазины в городе<img src="images\icon-arrow-down.png" alt="#"></a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+             <a class="dropdown-item" href="#">ТРЦ «Тандем», 3 этаж, Ибрагимова, 56</a>
+             <a class="dropdown-item" href="#">ТРЦ «Южный», 1 этаж, Проспект Победы, 91</a>
+             <a class="dropdown-item" href="#">ТЦ «ГУМ», 3 этаж, Баумана, 51</a>
+           </div>
+        </div>
+      </li>
     </ul>
      <ul class="right">
        <li><a href="#">Контактная информация</a></li>
@@ -25,7 +65,6 @@
        <li><a href="#">Сотрудничество</a></li>
      </ul>
   </nav>
-
   <div id="container_logo">
      <ul>
        <li>
@@ -34,6 +73,7 @@
              <img src="images\Layer 7.png" alt="#">
            </a>
        </li>
+
        <li  class="list">
          <a href="#" class="bold">
            <img src="images\burger-menu-icon.png" alt="#">
@@ -53,12 +93,161 @@
    </div>
 </header>
 
-<div></div>
+<div id="content">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+   <!-- Carousel indicators -->
+   <ol class="carousel-indicators">
+       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+       <li data-target="#myCarousel" data-slide-to="1"></li>
+       <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+   </ol>
+   <!-- Wrapper for carousel items -->
+   <div class="carousel-inner">
+       <div class="carousel-item active">
+           <img src="images/pict.png" alt="First Slide">
+           <div class="baner_div">
+                 <h1>Женский рюкзак <br> из  натуральной кожи</h1>
+                  <br>
+                 <div>
+                   <p>2 900 &#8381;</p>
+                   <button class="btn btn-warning">В корзину</button>
+                 </div>
+           </div>
+       </div>
+       <!-- <div class="carousel-item">
+           <img src="images/pict.png" alt="Second Slide">
+       </div>
+       <div class="carousel-item">
+           <img src="images/pict.png" alt="Third Slide">
+       </div>
+       <div class="carousel-item">
+           <img src="images/pict.png" alt="Third Slide">
+       </div> -->
+   </div>
+   <!-- Carousel controls -->
+   <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+       <span class="carousel-control-prev-icon"></span>
+   </a>
+   <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+       <span class="carousel-control-next-icon"></span>
+   </a>
+</div>
+  <h3 class="products">Новые поступления</h3>
+      <div class="row">
+      <div class="col-sm-3"><img src="images/1.png" alt="">
+        <div>
+          <h4>Рюкзак 8848 Д-034</h4>
+           <p>2 900 &#8381;</p>
+            <button class="btn btn-warning">В корзину</button>
+        </div>
+      </div>
+      <div class="col-sm-3"><img src="images/2.png" alt="">
+        <div>
+          <h4>Клатч В-213</h4>
+           <p>1 500 &#8381;</p>
+            <button class="btn btn-warning">В корзину</button>
+        </div>
+      </div>
+      <div class="col-sm-3"><img src="images/3.png" alt="">
+        <div>
+          <h4>Рюкзак Winner Е-047</h4>
+           <p>2 000 &#8381;</p>
+            <button class="btn btn-warning">В корзину</button>
+        </div>
+      </div>
+      <div class="col-sm-3"><img src="images/4.png" alt="">
+        <div>
+          <h4>Рюкзак В-390</h4>
+           <p>1700 &#8381;</p>
+           <button class="btn btn-warning">В корзину</button>
+        </div>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3"><img src="images/5.png" alt="">
+          <div>
+            <h4>Светильник С-025</h4>
+             <p>2 900 &#8381;</p>
+             <button class="btn btn-warning">В корзину</button>
+          </div>
+        </div>
+        <div class="col-sm-3"><img src="images/6.png" alt="">
+          <div>
+            <h4>Рюкзак Winner Е-038</h4>
+             <p>2 200 &#8381;</p>
+              <button class="btn btn-warning">В корзину</button>
+          </div>
+        </div>
+        <div class="col-sm-3"><img src="images/7.png" alt="">
+          <div>
+            <h4>Сумка Я-010</h4>
+             <p>1 900 &#8381;</p>
+              <button class="btn btn-warning">В корзину</button>
+          </div>
+        </div>
+        <div class="col-sm-3"><img src="images/8.png" alt="">
+          <div>
+            <h4>Кошелёк Я-045</h4>
+             <p>500 &#8381;</p>
+              <button class="btn btn-warning">В корзину</button>
+          </div>
+        </div>
+    </div>
+ <h3 class="products">Распродажа</h3>
+     <div class="row">
+       <div class="col-sm-3"><img src="images/9.png" alt="">
+         <div>
+           <h4>Рюкзак Winner Е-053</h4>
+             <div class="low_price">
+                <p class="red_price">2 200 &#8381;</p><p class="line-through">2 900 &#8381;</p>
+             </div>
+            <button class="btn btn-warning">В корзину</button>
+         </div>
+       </div>
+       <div class="col-sm-3"><img src="images/10.png" alt="">
+         <div>
+           <h4>Кошелёк Я-397</h4>
+              <div class="low_price">
+            <p class="red_price">899 &#8381;</p><p class="line-through">1100 &#8381;</p>
+           </div>
+          <button class="btn btn-warning">В корзину</button>
+         </div>
+       </div>
+       <div class="col-sm-3"><img src="images/11.png" alt="">
+         <div>
+           <h4>Термос ТС-035</h4>
+             <div class="low_price">
+            <p class="red_price">1100 &#8381;</p><p class="line-through">1600 &#8381;</p>
+          </div>
+         <button class="btn btn-warning">В корзину</button>
+         </div>
+       </div>
+       <div class="col-sm-3"><img src="images/12.png" alt="">
+         <div>
+           <h4>Косметичка Я-404</h4>
+             <div class="low_price">
+            <p class="red_price">500 &#8381;</p> <p class="line-through">500 &#8381;</p>
+         </div>
+           <button class="btn btn-warning">В корзину</button>
+        </div>
+       </div>
+    </div>
+   </div>
+
 
 <footer>
 
+
 </footer>
 
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script>
 
+</script>
 </body>
 </html>

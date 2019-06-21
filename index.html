@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Online Shop</title>
+  <script src="https://vk.com/js/api/openapi.js?161" type="text/javascript"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
@@ -88,7 +89,7 @@
               <input placeholder="Найти на сайте" type="text">
           </div>
       </li>
-       <li class="list bold">(843) 259‒80‒69 <br><span>Ежедневно, с 10 до 22</span></li>
+       <li class="list phone">(843) 259‒80‒69 <br><span>Ежедневно, с 10 до 22</span></li>
        <li class="list"><a href="#"><img src="images\icon-shopping-cart.png" alt="#"></a></li>
      </ul>
    </div>
@@ -274,17 +275,41 @@
          <img src="images/in_3.png" class="img-responsive inline-block" alt="Responsive image"/>
          <img src="images/in_4.png" class="img-responsive inline-block" alt="Responsive image"/>
          <img src="images/in_5.png" class="img-responsive inline-block" alt="Responsive image"/>
+  </div>
  </div>
 </div>
-
-
-
-   </div>
 <!-- !!!!!!!!!!!!!!!!!!!!!!!!!content!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
 <!-- !!!!!!!!!!!!!!!!!!!!!!!!!footer!!!!!!!!!!!!!!!!!!!!!!!!! -->
+   <hr>
 <footer>
-
+  <div class="row">
+    <div class="col-md-6">
+        <p id="bag_you">© Bag&You. Городские рюкзаки и аксессуары в Казани.
+            <br><span class="op_6">2015–2017</span></p>
+         <div class="buttons">
+             <button id="btn_1"><img src="images/vk.png"></button>
+             <button id="btn_2"><img src="images/fb.png"></button>
+             <button id="btn_3"><img src="images/in.png"></button>
+         </div>
+        <p class="op_6">Мы получаем и обрабатываем персональные данные посетителей нашего сайта в соответствии с официальной политикой. Если вы не даёте согласия на обработку своих персональных данных, вам необходимо покинуть наш сайт.</p>
+    </div>
+    <div class="col-md-3">
+      <p id="phone_bottom">(843) 259‒80‒69 <br><span>Ежедневно, с 10 до 22</span></p>
+      <ul>
+        <li><a href="">Блог <br><img src="images/line_ft.png"></a></li>
+        <li><a href="">Заказ и доставка <br><img src="images/line_ft2.png"></a></li>
+        <li><a href="">Сотрудничество <br><img src="images/line_ft2.png"></a></li>
+        <li><a href="">Контактная информация <br><img src="images/line_ft4.png"></a></li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <div id="vk_groups"></div>
+    <script type="text/javascript">
+      VK.Widgets.Group("vk_groups", {mode: 0, width: "200", height: "230"}, 1);
+    </script>
+    </div>
+  </div>
 
 </footer>
 <!-- !!!!!!!!!!!!!!!!!!!!!!!!!footer!!!!!!!!!!!!!!!!!!!!!!!!! -->

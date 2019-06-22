@@ -83,6 +83,9 @@ font-size: 14px!important;
 height: 105px;
 margin: 0 5.9%;
 }
+/* Drop_down menu */
+   
+/* Drop_down menu */
 /* incon inside input */
 .search {
       position: relative;
@@ -109,13 +112,11 @@ border: 1px solid #f5f5f5;
  font-size: 16px;
  line-height: 30px;
 }
-#container_logo ul li{
-   list-style: none;
-   float: left;
-   margin-top: 26px;
-}
-.list{
-margin-left: 10.45%;
+#container_logo ul{
+ margin-top: 26px;
+ display: flex;
+ justify-content:space-between;
+ list-style: none;
 }
 
 #line{
@@ -134,7 +135,6 @@ line-height: 30px;
 #exampleModalLabel{
  font-family: "TimesNewRomanRegular";
  font-size: 24px;
-
 }
 
 .modal-body{
@@ -142,7 +142,7 @@ line-height: 30px;
   font-size: 16px;
 }
 .modal-footer ul li a span{
-  font-family: "Raleway-v4020-Bold"!important;
+  font-family: "Raleway-v4020-Bold";
   font-size: 18px;
   padding-right: 5px;
 }

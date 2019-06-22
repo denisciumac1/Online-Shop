@@ -84,7 +84,7 @@ height: 105px;
 margin: 0 5.9%;
 }
 
-/* Drop_down menu */
+/* Drop_down katalog */
 .wrapper {
   margin-top: 47px;
   z-index: 1000;
@@ -98,6 +98,7 @@ margin: 0 5.9%;
 	flex-flow: row wrap;
 	justify-content: center;
   background-color: #f5f5f5;
+  padding: 42px 77px;
 }
 .card-body{
 padding: 0;
@@ -115,7 +116,30 @@ padding: 0;
   margin-top: 124px;
 }
 .columns .column ul li{
-line-height: 20px;
+line-height: 25px;
+font-size: 18px;
+font-family: 'Raleway-v4020-Regular';
+}
+.columns .bold{
+ font-family: 'Raleway-v4020-Bold';
+}
+.columns .red{
+ color: red;
+}
+.margin_50{
+margin-top: 50px;
+}
+.margin_70{
+margin-top: 70px;
+}
+.margin_100{
+margin-top: 100px;
+}
+.margin_90{
+margin-top: 90px;
+}
+.margin_55{
+margin-top: 55px;
 }
 @media screen and (max-width: 980px) {
   .columns .column {
@@ -139,7 +163,7 @@ line-height: 20px;
 }
 }
 
-/* Drop_down menu */
+/* Drop_down katalog */
 
 /* incon inside input */
 .search {

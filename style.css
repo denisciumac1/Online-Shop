@@ -449,10 +449,65 @@ padding-right: 165px;
   font-family: 'Raleway', sans-serif;
   font-size: 14px;
 }
+footer .row div{
+padding-top: 20px;
+}
+
 footer ul li img{
 background-color: #f9e9b9;
 }
 footer ul li a{
   font-family: 'Raleway-v4020-Regular';
   font-size: 18px;
+}
+.ul_phone{
+display: none;
+}
+
+
+@media screen and (max-width: 950px){
+  #container_logo{
+  margin: 0 ;
+  }
+  #top{
+   display: none;
+  }
+  header{
+  height: 70px;
+  }
+  #container_logo #principal_ul{
+   height: 50px;
+   margin-top: 0px;
+   border-bottom: 2px solid #e2dbdb;
+   padding-bottom: 15px;
+  }
+  #container_logo #principal_ul .hidden{
+  display: none;
+  }
+  .carousel-item{
+  width: 600px;
+  }
+  #content .row .col-sm-3{
+     width: 50%;
+   }
+   .img-responsive{
+    width: 25%;
+  }
+   .ul_phone{
+    display: block;
+
+  }
+   .ul_phone .desktop_hidden{
+      display: inline-block;
+      padding-left: 25px;
+      vertical-align: middle;
+   }
+  .ul_phone .burger_menu{
+   border-left: 2px solid #e2dbdb;
+   line-height: 50px;
+
+  }
+  footer .row .vk {
+  display: none;
+  }
 }

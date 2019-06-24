@@ -1,35 +1,54 @@
-@import url('https://fonts.googleapis.com/css?family=Podkova:400,800|Raleway:400,500,700&display=swap');
-@font-face {
-      font-family: "fonts/TimesNewRomanRegular";
-			src: url("fonts/TimesNewRomanRegular.eot");
-			src: url("fonts/TimesNewRomanRegular.eot?#iefix")format("embedded-opentype"),
-			url("fonts/TimesNewRomanRegular.woff") format("woff"),
-			url("fonts/TimesNewRomanRegular.ttf") format("truetype");
-			font-style: normal;
-			font-weight: normal;
-	}
-  @font-face {
-  			font-family: "fonts/Raleway-v4020";
-        src: url("fonts/Raleway-v4020-Bold.otf");
-        src: url("fonts/Raleway-v4020-ExtraBold.otf");
-        src: url("fonts/Raleway-v4020-Medium.otf");
-        src: url("fonts/Raleway-v4020-Regular.otf");
-  	}
 
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: url('fonts/Raleway-Regular.ttf');
+}
+@font-face {
+    font-family: 'Raleway-Bold';
+    src: url('fonts/Raleway-Bold.ttf');
+}
+@font-face {
+    font-family: 'Podkova-Regular';
+    src: url('fonts/Podkova-Regular.ttf');
+}
+@font-face {
+    font-family: 'Podkova-ExtraBold';
+    src: url('fonts/Podkova-ExtraBold.ttf');
+}
+@font-face {
+    font-family: 'Raleway-v4020-Regular';
+    src: url('fonts/Raleway-v4020-Regular.otf');
+}
+@font-face {
+    font-family: 'Raleway-v4020-Medium';
+    src: url('fonts/Raleway-v4020-Medium.otf');
+}
+@font-face {
+    font-family: 'Raleway-v4020-SemiBold';
+    src: url('fonts/Raleway-v4020-SemiBold.otf');
+}
+@font-face {
+    font-family: 'Raleway-v4020-Bold';
+    src: url('fonts/Raleway-v4020-Bold.otf');
+}
+@font-face {
+    font-family: 'Raleway-v4020-Black';
+    src: url('fonts/Raleway-v4020-Black.otf');
+}
 body{
  overflow-x: hidden; /* needed because hiding the Panel on the right  */
 }
-.bold{
-font-family: 'Raleway', sans-serif;
-font-weight: 700;
-color: inherit;
+.left .bold{
+font-family: 'Raleway-Bold';
+font-size: 14px;
 }
 .phone{
-font-family: 'Raleway', sans-serif;
+font-family: 'Raleway-v4020-Bold';
 font-size: 18px;
 }
 .phone span{
- font-family: 'Raleway', sans-serif;
+font-family: 'Raleway-Regular';
+font-size: 11px;
 }
 header{
   height: 138px;
@@ -39,11 +58,15 @@ header{
   height: 33px;
   background-color: #f5f5f5;
 }
+#top .left .city{
+  font-family: 'Raleway-Regular';
+  font-size: 14px;
+}
 #top ul li{
 list-style: none;
 margin-top: 9px;
-font-size: 13px!important;
-color: inherit;
+font-family: 'Raleway-Regular';
+font-size: 13px;
 }
 a{
   text-decoration: none;
@@ -53,9 +76,7 @@ a:hover{
   text-decoration: none;
   color: inherit;
 }
-.left .bold{
-font-size: 14px!important;
-}
+
 #top .left  li{
  float: left;
 }
@@ -118,9 +139,11 @@ padding: 0;
 line-height: 25px;
 font-size: 18px;
 font-family: 'Raleway-v4020-Regular';
+
 }
 .columns .bold{
- font-family: 'Raleway-v4020-Bold';
+font-family: 'Raleway-v4020-Bold'!important;
+
 }
 .columns .red{
  color: red;
@@ -187,6 +210,7 @@ border: 1px solid #f5f5f5;
 /* incon inside input */
 
 .list .bold{
+ font-family: 'Raleway-Bold';
  font-size: 16px;
  line-height: 30px;
 }
@@ -211,25 +235,26 @@ line-height: 30px;
  color: #4c4c4c;
 }
 #exampleModalLabel{
- font-family: "TimesNewRomanRegular";
+font-family: 'Podkova-ExtraBold';
  font-size: 24px;
 }
 
 .modal-body{
-  font-family: "TimesNewRomanRegular";
+font-family: 'Raleway-v4020-Regular';
   font-size: 16px;
 }
 .modal-footer ul li a span{
-  font-family: "Raleway-v4020-Bold";
+font-family: 'Raleway-v4020-Bold';
   font-size: 18px;
   padding-right: 5px;
 }
 .modal-footer ul li a {
-  font-family: "TimesNewRomanRegular";
+font-family: 'Raleway-v4020-Regular';
   font-size: 18px;
 }
 
 .modal-footer li a:hover{
+font-family: 'Raleway-v4020-Black';
 color: #d3aa2f;
 }
 .modal-header{
@@ -239,7 +264,7 @@ color: #d3aa2f;
 border-top: 0;
 }
 .dropdown-item{
-  font-family: 'TimesNewRomanRegular';
+font-family: 'Raleway-Regular';
   font-size: 14px;
 }
 
@@ -257,27 +282,28 @@ float: right;
 padding: 20px;
 }
 .baner_div h1{
-  font-family: 'Podkova', serif;
+  font-family: 'Podkova-ExtraBold';
   font-weight: 800;
   font-size: 48px;
 }
 .baner_div p{
-  font-family: "Raleway-v4020-Bold";
+font-family: 'Raleway-v4020-Bold';
   font-size: 36px;
   float: left;
 }
 .baner_div button{
-font-family: "Raleway-v4020-Bold";
+font-family: 'Raleway-v4020-Bold';
+  font-size: 18px;
+  padding: 15px 25px;
   float: right;
   color:white;
-  margin-right: 250px;
-   width: 128px;
-  height: 48px;
+  margin-right: 120px;
+  margin-top: -10px;
 }
 .products{
 text-align: center;
 font-size: 36px;
-font-family: 'Podkova', serif;
+font-family: 'Podkova-ExtraBold';
 font-weight: 800;
 margin:  58px 0;
 
@@ -294,7 +320,7 @@ font-family: 'Raleway-v4020-Regular';
 }
 .col-sm-3 div p{
 font-size: 18px;
-font-family: 'Raleway-v4020-Bold' ;
+font-family: 'Raleway-v4020-Bold';
 }
 .red_price{
 color: red;
@@ -304,18 +330,20 @@ display: inline;
 text-decoration: line-through;
 display: inline;
 padding-left: 10px;
-font-family: 'Raleway-v4020-Medium';
+
 font-size: 14px;
 opacity: 0.6;
 }
 .col-sm-3 button{
-width: 80px;
-height:26px;
+font-family: 'Raleway-v4020-Bold';
+width: 92px;
+height:28px;
 color: white;
-font-size: 11px;
+font-size: 13px;
 opacity: 0;
 margin-top: 12px;
-font-family: 'Raleway-v4020-Bold' ;
+line-height: normal;
+
 }
 .col-sm-3:hover button{
   opacity: 1;
@@ -324,14 +352,14 @@ font-family: 'Raleway-v4020-Bold' ;
 text-align: center;
 border: 6px solid #d3aa2f;
 font-size: 36px;
-font-family: 'Podkova', serif;
+font-family: 'Podkova-Regular';
 padding: 75px;
 margin-top: 140px;
 }
 #blog header{
   text-align: center;
   font-size: 36px;
-  font-family: 'Podkova', serif;
+font-family: 'Podkova-ExtraBold';
   font-weight: 800;
   margin-top: 88px;
 }
@@ -349,7 +377,6 @@ padding: 16px 0;
 #blog .col-md-4 p{
 font-size: 18px;
 font-family: 'Raleway-v4020-Regular';
-
 }
 .yellow_line{
 height: 3px;
@@ -385,10 +412,10 @@ left: 50px;
 }
 #instagram p{
 position: relative;
-top:  140px;
+top:  120px;
 left: 50px;
 color: white;
-font-family: 'Podkova', serif;
+font-family: 'Podkova-ExtraBold';
 font-size: 24px;
 font-weight: 800;
 }
@@ -440,12 +467,12 @@ footer .col-md-6{
 padding-right: 165px;
 }
 #phone_bottom{
-  font-family: "Raleway-v4020-Bold";
+font-family: 'Raleway-v4020-Bold';
   font-size: 24px;
   margin-bottom: 56px;
 }
 #phone_bottom span{
-  font-family: 'Raleway', sans-serif;
+font-family: 'Raleway-Regular';
   font-size: 14px;
 }
 footer .row div{
@@ -456,11 +483,15 @@ footer ul li img{
 background-color: #f9e9b9;
 }
 footer ul li a{
-  font-family: 'Raleway-v4020-Regular';
+font-family: 'Raleway-v4020-Regular';
   font-size: 18px;
 }
 .ul_phone{
 display: none;
+}
+#vk_groups{
+float: right;
+padding-top: 5px;
 }
 
 
@@ -586,18 +617,18 @@ display: none;
     border: none;
   }
    #menu .select_1{
-     font-family: 'Raleway-v4020-Regular';
+
     font-size: 18px;
     opacity: 0.7;
  }
  #menu .select_2{
-   font-family: 'Raleway-v4020-Regular';
+
      font-size: 18px;
    opacity: 0.7;
  }
 
  #menu .padding_l {
-    font-family: 'Raleway', sans-serif;
+  ;
     line-height: 40px;
     font-size: 18px;
 }
@@ -611,12 +642,12 @@ display: none;
   color: red;
  }
   #menu .phone_panel .p{
-   font-family: 'Raleway', sans-serif;
+
   font-size: 26px;
   padding-bottom:  50px;
  }
  #menu .footer_panel li{
-   font-family: 'Raleway-v4020-Regular';
+
      font-size: 18px;
       line-height: 30px;
        opacity: 0.7;

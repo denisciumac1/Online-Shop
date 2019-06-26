@@ -35,8 +35,8 @@
     font-family: 'Raleway-v4020-Black';
     src: url('fonts/Raleway-v4020-Black.otf');
 }
-body{
- overflow-x: hidden; /* needed because hiding the Panel on the right  */
+html, body {
+  overflow-x:hidden
 }
 .left .bold{
 font-family: 'Raleway-Bold';
@@ -390,9 +390,9 @@ width: 150px;
 #blog #third_line{
 width: 165px;
 }
-#blog .row {
+/* #blog .row {
   padding: 0 65px;
-}
+} */
 #blog .row .col-md-4{
   padding: 0 50px;
   line-height: 25px;
@@ -493,6 +493,30 @@ display: none;
 float: right;
 padding-top: 5px;
 }
+.mobile_btn, .mobile_p{
+display: none;
+}
+
+@media screen and (max-width: 1253px){
+  #small-img .img-responsive_l{
+      display: none;
+   }
+
+}
+
+@media screen and (max-width: 750px){
+  #small-img .img-responsive_r{
+      display: none;
+   }
+}
+
+@media screen and (max-width: 500px){
+   #small-img .img-responsive_q{
+         display: none;
+      }
+
+}
+
 
 
 @media screen and (max-width: 950px){
@@ -517,16 +541,16 @@ padding-top: 5px;
   .carousel-item{
   width: 600px;
   }
-  #content .row .col-sm-3{
-     width: 50%;
+
+  #content .row .col-sm-3 img{
+     height: 220px;
+
    }
-   .img-responsive{
-    width: 25%;
+   #blog .row .col-md-4{
+    padding: 0 10px;
   }
    .ul_phone{
     display: block;
-
-
   }
    .ul_phone .desktop_hidden{
       display: inline-block;
@@ -543,21 +567,30 @@ padding-top: 5px;
   footer .row .vk {
   display: none;
   }
+  footer .row .col-md-3 {
+   max-width: none;
+   margin-left: 100px;
+  }
+  footer .col-md-6 {
+  padding: 0;
 
+ }
+ .row .pd_rl{
+  padding: 0;
+ }
   /* Panel Katalog */
   a{
     text-decoration: none;
 
-    /* transition: color 0.1s ease; */
+    transition: color 0.1s ease;
   }
 
   #menuToggle{
     display: block;
     position: absolute;
-    right: 10px;
+    right: 15px;
     z-index: 100;
-    -webkit-user-select: none;
-    user-select: none;
+
   }
 
   #menuToggle #checkbox{
@@ -580,8 +613,8 @@ padding-top: 5px;
   }
 
   #menu{
-    position: absolute;
-    width: 500px;
+    position:  fixed;
+    width: 450px;
     margin: -100px 0 0 0;
     padding-left: 15px;
     padding-top: 75px;
@@ -598,11 +631,17 @@ padding-top: 5px;
   #menuToggle input:checked ~ ul{
     transform: scale(1.0, 1.0);
     opacity: 1;
+    position: absolute;
+
   }
  #menu form input{
    background-color: #f5f5f5;
    border: none !important;
   }
+  .w-75{
+  width: 48%!important;
+ }
+
 
   #menu select {
    width: 400px;
@@ -617,24 +656,23 @@ padding-top: 5px;
     border: none;
   }
    #menu .select_1{
+    font-family: 'Raleway-v4020-Regular';
+    font-size: 12px;
 
-    font-size: 18px;
-    opacity: 0.7;
  }
  #menu .select_2{
+font-family: 'Raleway-v4020-Regular';
+     font-size: 12px;
 
-     font-size: 18px;
-   opacity: 0.7;
  }
 
  #menu .padding_l {
-  ;
-    line-height: 40px;
-    font-size: 18px;
+font-family: 'Raleway-v4020-Bold';
+    font-size: 15px;
+   padding-left: 70px;
+   line-height: 30px;
 }
- #menu .padding_l{
-  padding-left: 70px;
- }
+
  #menu  .opacity_7{
   opacity: 0.7;
  }
@@ -642,18 +680,148 @@ padding-top: 5px;
   color: red;
  }
   #menu .phone_panel .p{
-
-  font-size: 26px;
+ font-family: 'Raleway-v4020-Bold';
+  font-size: 18px;
   padding-bottom:  50px;
  }
+.list span{
+font-family: 'Raleway-v4020-Regular';
+ font-size: 12px;
+}
  #menu .footer_panel li{
-
-     font-size: 18px;
+font-family: 'Raleway-v4020-Regular';
+      font-size: 12px;
       line-height: 30px;
        opacity: 0.7;
  }
  #menu {
   padding-bottom: 50px;
  }
+  .col-sm-3 div h4{
+  margin-bottom: 10px;
+ }
+ #about{
+ text-align: left;
+  padding: 50px;
+ }
+
   /* Panel Katalog */
 }
+
+@media screen and (max-width: 767px){
+#content .row .col-sm-3 {
+   width: 50%;
+ }
+#blog .hidden{
+display: none;
+ }
+ #blog .row{
+  margin: 0;
+ }
+ #blog .row .col-md-4{
+  padding:  0;
+ }
+ #blog .pd_top{
+ margin-top: 20px;
+  }
+footer .col-md-6 p span{
+ float: none;
+ }
+ .btn-group{
+  display: none;
+ }
+ .dsp_none{
+  display: none;
+ }
+footer .row .col-md-3{
+ margin-left: 0;
+ }
+.mobile_btn, .mobile_p{
+ display: block;
+ }
+}
+@media screen and (max-width: 425px){
+ #about{
+  padding: 20px;
+  font-size: 26px;
+ }
+ #blog header{
+   margin-bottom: 15px;
+ }
+}
+
+/* @media only screen and (min-device-width : 767px) and (max-device-width : 768px){
+
+   .baner_div h1{
+   font-family: 'Podkova-ExtraBold';
+   font-size: 60px;
+  }
+  .baner_div p{
+   font-family: 'Raleway-v4020-SemiBold';
+   font-size: 48px;
+  }
+  .baner_div button{
+  font-family: 'Raleway-v4020-Bold';
+  font-size: 30px;
+ }
+  .products{
+   font-family: 'Podkova-ExtraBold';
+   font-size: 48px;
+ }
+  .col-sm-3 div h4{
+    font-family: 'Raleway-v4020-Regular';
+   font-size: 30px;
+ }
+  .col-sm-3 div p{
+    font-size: 30px;
+ font-family: 'Raleway-v4020-Bold';
+ }
+ .low_price .line-through{
+  font-family: 'Raleway-v4020-Medium';
+  font-size: 24px;
+ }
+ #about{
+    font-size: 48px;
+     font-family: 'Podkova-Regular';
+ }
+ #blog header{
+   font-size: 48px;
+     font-family: 'Podkova-ExtraBold';
+ }
+ #blog .col-md-4 h6{
+   font-size: 30px;
+ font-family: 'Raleway-v4020-Bold';
+ }
+ #blog .col-md-4 p{
+   font-size: 30px;
+   font-family: 'Raleway-v4020-Regular';
+ }
+ #instagram p{
+   font-family: 'Podkova-ExtraBold';
+     font-size: 36px;
+ }
+ footer .col-md-6 p{
+   font-family: 'Raleway-v4020-Regular';
+     font-size: 30px;
+ }
+ footer .col-md-6 p span{
+   font-family: 'Raleway-v4020-Regular';
+     font-size: 30px;
+ }
+ #phone_bottom{
+   font-family: 'Raleway-v4020-Bold';
+     font-size: 36px;
+ }
+ #phone_bottom span{
+   font-family: 'Raleway-Regular';
+  font-size: 24px;
+ }
+ footer ul li a{
+   font-family: 'Raleway-v4020-Regular';
+  font-size: 30px;
+ }
+ footer .col-md-6 p{
+   font-family: 'Raleway-v4020-Regular';
+     font-size: 24px;
+ }
+} */

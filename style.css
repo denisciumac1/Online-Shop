@@ -518,7 +518,6 @@ display: none;
 }
 
 
-
 @media screen and (max-width: 950px){
   #container_logo{
   margin: 0 ;
@@ -736,8 +735,16 @@ footer .col-md-6 p span{
 footer .row .col-md-3{
  margin-left: 0;
  }
-.mobile_btn, .mobile_p{
+ .mobile_p{
  display: block;
+  padding-left: 15px;
+ }
+.mobile_btn{
+  display: inline-flex;
+  padding-left: 15px;
+ }
+ #bag_you{
+  padding-left: 15px
  }
 }
 
@@ -780,80 +787,3 @@ footer .row .col-md-3{
  width: 400px;
  }
 }
-
-
-/* @media only screen and (min-device-width : 767px) and (max-device-width : 768px){
-
-   .baner_div h1{
-   font-family: 'Podkova-ExtraBold';
-   font-size: 60px;
-  }
-  .baner_div p{
-   font-family: 'Raleway-v4020-SemiBold';
-   font-size: 48px;
-  }
-  .baner_div button{
-  font-family: 'Raleway-v4020-Bold';
-  font-size: 30px;
- }
-  .products{
-   font-family: 'Podkova-ExtraBold';
-   font-size: 48px;
- }
-  .col-sm-3 div h4{
-    font-family: 'Raleway-v4020-Regular';
-   font-size: 30px;
- }
-  .col-sm-3 div p{
-    font-size: 30px;
- font-family: 'Raleway-v4020-Bold';
- }
- .low_price .line-through{
-  font-family: 'Raleway-v4020-Medium';
-  font-size: 24px;
- }
- #about{
-    font-size: 48px;
-     font-family: 'Podkova-Regular';
- }
- #blog header{
-   font-size: 48px;
-     font-family: 'Podkova-ExtraBold';
- }
- #blog .col-md-4 h6{
-   font-size: 30px;
- font-family: 'Raleway-v4020-Bold';
- }
- #blog .col-md-4 p{
-   font-size: 30px;
-   font-family: 'Raleway-v4020-Regular';
- }
- #instagram p{
-   font-family: 'Podkova-ExtraBold';
-     font-size: 36px;
- }
- footer .col-md-6 p{
-   font-family: 'Raleway-v4020-Regular';
-     font-size: 30px;
- }
- footer .col-md-6 p span{
-   font-family: 'Raleway-v4020-Regular';
-     font-size: 30px;
- }
- #phone_bottom{
-   font-family: 'Raleway-v4020-Bold';
-     font-size: 36px;
- }
- #phone_bottom span{
-   font-family: 'Raleway-Regular';
-  font-size: 24px;
- }
- footer ul li a{
-   font-family: 'Raleway-v4020-Regular';
-  font-size: 30px;
- }
- footer .col-md-6 p{
-   font-family: 'Raleway-v4020-Regular';
-     font-size: 24px;
- }
-} */

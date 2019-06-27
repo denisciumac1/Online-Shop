@@ -740,6 +740,7 @@ footer .row .col-md-3{
  display: block;
  }
 }
+
 @media screen and (max-width: 425px){
  #about{
   padding: 20px;
@@ -748,7 +749,38 @@ footer .row .col-md-3{
  #blog header{
    margin-bottom: 15px;
  }
+ .baner_div h1{
+  font-size: 36px;
+  margin-right: 160px;
+ }
+
 }
+@media screen and (max-width: 320px){
+  .carousel-item img{
+   height: 320px;
+   }
+  .baner_div{
+  margin-top: 15px;
+  }
+ .baner_div button{
+    margin-right: 180px;
+    padding: 5px 10px;
+    margin-top: 0;
+ }
+ #content .row .col-sm-3{
+   padding: 0;
+ }
+ #about{
+ margin-top: 20px;
+ }
+#content .row .col-sm-3 img{
+ height: 200px;
+ }
+ #menu{
+ width: 400px;
+ }
+}
+
 
 /* @media only screen and (min-device-width : 767px) and (max-device-width : 768px){
 
